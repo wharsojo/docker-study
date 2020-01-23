@@ -7,5 +7,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - /var/www/docker-study.loc/recipe-01/html:/var/www/myapp
-      - /var/www/docker-study.loc/recipe-01/docker/site.conf:/etc/nginx/conf.d/site.conf
+      - ~/gitrepo/docker-study/recipe-01/html:/var/www/myapp
+      - ~/gitrepo/docker-study/recipe-01/docker/sec.conf:/etc/nginx/conf.d/sec.conf
+      - ~/gitrepo/docker-study/recipe-01/docker/site.conf:/etc/nginx/conf.d/site.conf
+      - ~/gitrepo/docker-study/recipe-01/docker/global.conf:/etc/nginx/conf.d/global.conf
